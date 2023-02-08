@@ -8,7 +8,7 @@ This project helps to create the multiple usesrs andd helps to manage their IDs,
 **1.)Suppose to get users count:- _(http://localhost:8080/api/v1/visitors-count/username/{username}/count)_**
 using POSTMAN
 ---
-![Adding user](./get_user%20name%20with%20count%20-1.pngget_user name with count -1.png)
+![Adding user](./get_user%20name%20with%20count%20-1.png)
 ---
 **2.) To get users:- _(http://localhost:8080/api/v1/visitors-count/getAllCount)_**
 
