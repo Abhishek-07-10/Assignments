@@ -1,0 +1,14 @@
+div{
+    background-color: blue;
+}
+
+li{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: inline;
+}
+.hii3 {
+    box-sizing: border-box;
+}
