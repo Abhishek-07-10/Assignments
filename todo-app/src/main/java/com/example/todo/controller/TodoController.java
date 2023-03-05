@@ -1,10 +1,19 @@
 package com.example.todo.controller;
 
-import com.example.todo.model.Todo;
-import com.example.todo.service.ITodoService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.todo.model.Todo;
+import com.example.todo.service.TodoService;
 
 
 @RestController
@@ -12,9 +21,7 @@ import java.util.List;
 public class TodoController {
 
     @Autowired
-    private ITodoService todoService;
-
-
+    private TodoService todoService;
 
     //http://localhost:8080/api/v1/todo-app/add-todo
     @PostMapping("/add-todo")
@@ -31,7 +38,7 @@ public class TodoController {
 
     //http://localhost:8080/api/v1/todo-app/find-all
     @GetMapping("find-all")
-    public List<Todo> findAllTodos() { // controller is talking to the service layer
+    public List<Todo> findAllTodos() { 
         return todoService.findAll();
     }
 
