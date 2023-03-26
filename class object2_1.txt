@@ -1,0 +1,59 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+public static class Influencer{
+        String name;
+        int totalPost;
+        int totalReels;
+        String blueTick;
+        int followers;
+        int following;
+        String category;
+        char gender;
+        
+        Influencer(String name,int totalpost,int totalreels,String bluetick,int followers,int following,String category,char gender){
+            this.name=name;
+            this.totalPost=totalpost;
+            this.totalReels=totalreels;
+            this.blueTick=bluetick;
+            this.followers=followers;
+            this.following=following;
+            this.category=category;
+            this.gender=gender;
+            System.out.println(this.name);
+            System.out.println(this.totalPost);
+            System.out.println(this.totalReels);
+            System.out.println(this.blueTick);
+            System.out.println(this.followers);
+            System.out.println(this.following);
+            System.out.println(this.category);
+            System.out.println(this.gender);
+        }
+        
+        void setname(String name){ this.name=name; }
+        void settotalpost(int totalpost){ this.totalPost=totalpost; }
+        void settotalreels(int totalreels){ this.totalReels=totalreels; }
+        void setbluetick(String blue){ this.blueTick=blue; }
+        void setfollowers(int followers){ this.followers=followers; }
+        void setfollowing(int following){ this.following=following; }
+        void setcatogory(String catogory){ this.category=catogory; }
+        void setgender(char gender){ this.gender=gender; }
+/////
+    
+        String getname(){ return name; }
+        int gettotalpost(){ return totalPost; }
+        int gettotalreels(){ return totalReels; }
+        String getbluetick(){ return blueTick; }
+        int getfollowers(){return followers; }
+        int getfollowing(){ return following; }
+        String getcatogory(){ return category; }
+        char getgender(){ return gender; }
+    }
+    public static void main(String[] args) {
+        Influencer influencer1=new Influencer("Raftaar",340,400,"Yes",7,200,"Rapper",'M');
+        Influencer influencer2=new Influencer("Rachel Gupta",550,350,"Yes",15,10,"Artist",'M');
+        Influencer influencer3=new Influencer("Nikhil Chinapa",500,220,"Yes",5,210,"VJ",'M');
+        Influencer influencer4=new Influencer("Baseer",500,120,"No",2,230,"VJ",'M');       
+    }
+}
